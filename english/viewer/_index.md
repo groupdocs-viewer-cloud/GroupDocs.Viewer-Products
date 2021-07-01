@@ -27,7 +27,7 @@ apis:
           img_alt: "GroupDocs.Viewer Cloud for cURL"
           image: "/sdk/272x272/groupdocs_viewer-for-curl.webp"
           product: "GroupDocs.Viewer"
-          platform: "Cloud for cURL"
+          platform: "cURL"
           content: "Work with cURL RESTful document viewer API to quickly render and display Microsoft Office, PDF and other common file formats in your applications."
 
         # api_product loop

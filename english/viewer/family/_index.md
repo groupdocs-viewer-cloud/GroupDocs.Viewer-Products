@@ -26,8 +26,8 @@ apis:
           img_alt: "GroupDocs.Viewer Cloud for cURL"
           image: "/sdk/272x272/groupdocs_viewer-for-curl.webp"
           product: "GroupDocs.Viewer"
-          platform: "Cloud for cURL"
-          content: "Send API requests to our cloud-based document viewer RESTful API supporting over 50 file formats using cURL."
+          platform: "cURL"
+          content: "Send API requests to our cloud-based document viewer RESTful API supporting over 85 file formats using cURL."
 
         # api_product loop
         - link: "/viewer/net/"
@@ -53,7 +53,7 @@ apis:
           image: "/sdk/272x272/groupdocs_viewer-for-php.webp"
           product: "GroupDocs.Viewer"
           platform: "Cloud SDK for PHP"
-          content: "PHP SDK to accelerate your experience with our cloud-based document viewer RESTful API supporting over 50 file formats."
+          content: "PHP SDK to accelerate your experience with our cloud-based document viewer RESTful API supporting over 85 file formats."
 
         # api_product loop
         - link: "/viewer/python/"
@@ -76,7 +76,7 @@ apis:
     # api loop
     - api_product:
         # api_product loop
-        - link: "/viewer/node.js"
+        - link: "/viewer/nodejs/"
           img_alt: "GroupDocs.Viewer Cloud SDK for Node.js"
           image: "/sdk/272x272/groupdocs_viewer-for-node.webp"
           product: "GroupDocs.Viewer"

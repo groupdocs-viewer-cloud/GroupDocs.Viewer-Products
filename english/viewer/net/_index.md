@@ -27,7 +27,7 @@ submenu:
         img_alt: "GroupDocs.Viewer Cloud SDK for .NET"
         image: "/sdk/272x272/groupdocs_viewer-for-net.webp"
         product: "GroupDocs.Viewer"
-        platform: "cURL"
+        platform: ".NET"
 
     middle:
         button:
@@ -67,20 +67,38 @@ overview:
       ## TAB ONE ##
       tab_one:
         description: |
-          GroupDocs.Viewer Cloud SDK for .NET only requires .NET Framework.
+          An overview GroupDocs.Viewer Cloud API.
 
-        
+        left:
+          enable: true
+          icon: "fa fa-cogs"
+          title: "Supported Categories"
+          content: |
+            * Word, Excel, PowerPoint
+            * Visio, Project, Outlook
+            * OpenDocument
+            * Images
+            * CAD Drawing Image formats
+            * PDF, XPS, Text, Web formats
+            * OneNote & others
         right:
           enable: true
-          icon: "fas fa-cubes"
-          title: ".NET Framework"
+          icon: "fab fa-html5"
+          title: "Feature Overview"
           content: |
+            * Get Document Information
+            * HTML Viewer
+            * Image Viewer
+            * PDF Viewer
+            * Rotating & Reordering
+            * Watermark Pages
+            * Rendering Attachments
             
       
       ## TAB TWO ##
       tab_two:
         description: |
-          GroupDocs.Viewer Cloud for cURL supports a number of document formats.
+          GroupDocs.Viewer Cloud supports a number of document formats. Check out <a href="https://docs.groupdocs.cloud/viewer/supported-document-formats/">complete list</a>.
 
         left:
           enable: true
@@ -121,39 +139,6 @@ overview:
         description: |
           If you do not want to use any of our SDKs or the required SDK is not available at the moment, you can still easily get started with GroupDocs.Viewer REST API while using your favorite language & platform.
         
-        left:
-          enable: true
-          table:
-            # table loop
-            - icon: "fab fa-windows"
-              title: "Operating Systems"
-              content: |
-                * Microsoft Windows Desktop
-                * Microsoft Windows Server
-                * Linux
-                * MacOS
-
-            # table loop
-            - icon: "fas fa-code"
-              title: "Supported Frameworks"
-              content: |
-                * Java 7 (1.7) and above
-
-        right:
-          enable: true
-          table:
-            # table loop
-            - icon: "fas fa-cogs"
-              title: "Development Environments"
-              content: |
-                * NetBeans
-                * IntelliJ IDEA
-                * Eclipse
-            # table loop
-            - icon: "fas fa-tools"
-              title: "Build Automation Tool"
-              content: |
-                * Maven
 
 ############################# Features ############################
 features:

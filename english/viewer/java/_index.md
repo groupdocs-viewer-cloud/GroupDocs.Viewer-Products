@@ -69,13 +69,32 @@ overview:
       ## TAB ONE ##
       tab_one:
         description: |
-          GroupDocs.Viewer Cloud SDK for Java requires Java Runtime Environment and can run on any platform where these requirements can be 
+          An overview GroupDocs.Viewer Cloud API.
 
+        left:
+          enable: true
+          icon: "fa fa-cogs"
+          title: "Supported Categories"
+          content: |
+            * Word, Excel, PowerPoint
+            * Visio, Project, Outlook
+            * OpenDocument
+            * Images
+            * CAD Drawing Image formats
+            * PDF, XPS, Text, Web formats
+            * OneNote & others
         right:
           enable: true
-          icon: "fas fa-cubes"
-          title: "Java Runtime Environment"
+          icon: "fab fa-html5"
+          title: "Feature Overview"
           content: |
+            * Get Document Information
+            * HTML Viewer
+            * Image Viewer
+            * PDF Viewer
+            * Rotating & Reordering
+            * Watermark Pages
+            * Rendering Attachments
             
       
       ## TAB TWO ##
@@ -120,7 +139,7 @@ overview:
       ## TAB THREE ##
       tab_three:
         description: |
-          GroupDocs.Viewer Cloud for cURL - some of the supported languages and platforms.
+          Some of the supported languages and platforms.
         
         left:
           enable: true

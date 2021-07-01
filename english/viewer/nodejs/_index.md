@@ -7,7 +7,7 @@ draft: false
 product: "Viewer"
 product_tag: "viewer"
 platform: "Node.js"
-platform_tag: "nodejs"
+platform_tag: "node"
 
 ############################# Head ############################
 head_title: "Node.js Document Viewer Cloud SDK | Render PDF Word Excel Visio HTML"
@@ -69,19 +69,38 @@ overview:
       ## TAB ONE ##
       tab_one:
         description: |
-          GroupDocs.Viewer Cloud SDK for Node.js has the following requirements.
+          An overview GroupDocs.Viewer Cloud API.
 
+        left:
+          enable: true
+          icon: "fa fa-cogs"
+          title: "Supported Categories"
+          content: |
+            * Word, Excel, PowerPoint
+            * Visio, Project, Outlook
+            * OpenDocument
+            * Images
+            * CAD Drawing Image formats
+            * PDF, XPS, Text, Web formats
+            * OneNote & others
         right:
           enable: true
-          icon: "fas fa-cubes"
-          title: "npm"
+          icon: "fab fa-html5"
+          title: "Feature Overview"
           content: |
+            * Get Document Information
+            * HTML Viewer
+            * Image Viewer
+            * PDF Viewer
+            * Rotating & Reordering
+            * Watermark Pages
+            * Rendering Attachments
             
       
       ## TAB TWO ##
       tab_two:
         description: |
-          GroupDocs.Viewer Cloud SDK for Node.js supports a number of document formats.
+          GroupDocs.Viewer Cloud supports a number of document formats.
 
         left:
           enable: true
@@ -120,7 +139,7 @@ overview:
       ## TAB THREE ##
       tab_three:
         description: |
-          If you do not want to use any of our SDKs or the required SDK is not available at the moment, you can still easily get started with GroupDocs.Viewer REST API while using your favorite language & platform.
+          Get started with GroupDocs.Viewer REST API using your favorite language & platform.
         
         left:
           enable: true

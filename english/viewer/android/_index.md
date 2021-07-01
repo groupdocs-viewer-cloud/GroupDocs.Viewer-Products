@@ -6,16 +6,16 @@ draft: false
 
 product: "Viewer"
 product_tag: "viewer"
-platform: "cURL"
-platform_tag: "curl"
+platform: "Android"
+platform_tag: "android"
 
 ############################# Head ############################
-head_title: "Render PDF Word Excel Outlook via cURL | Document Viewer REST API"
-head_description: "REST APIs for Documents viewing and rendering via cURL commands. View PDF, images, Microsoft Word, Excel, PPTX, Visio, Project & 85+ file formats."
+head_title: "Android Document Viewing Cloud SDK | Render PDF Word Excel Visio HTML"
+head_description: "Android Cloud SDK & REST APIs to build apps for rendering & viewing images, HTML, PDF, Word, Excel, Email, Visio, Project & CAD file formats."
 
 ############################# Header ############################
-title: "Simply use cURL to Render & View Documents"
-description: "Exposes RESTful APIs to view and render business documents & attachments for supported file formats. Render as PDF, HTML, PNG or JPG image‎"
+title: "Render & View Documents via Android SDK"
+description: "RESTful API to efficiently build Android applications for rendering & viewing documents of all popular formats. Render as HTML, PNG, JPG or PDF."
 button:
     enable: true
 
@@ -24,10 +24,10 @@ submenu:
     enable: true
     
     left:
-        img_alt: "GroupDocs.Viewer for Cloud"
-        image: "/sdk/272x272/groupdocs_viewer-for-curl.webp"
+        img_alt: "GroupDocs.Viewer Cloud SDK for Android"
+        image: "/sdk/272x272/groupdocs_viewer-for-android.webp"
         product: "GroupDocs.Viewer"
-        platform: "cURL"
+        platform: "Android"
 
     middle:
         button:
@@ -39,6 +39,7 @@ submenu:
             - link: "#features"
               text: "Features"
 
+            
 
             # button loop
             - link: "https://docs.groupdocs.cloud/viewer/release-notes/"
@@ -49,7 +50,7 @@ submenu:
               text: "Pricing"
 
     right:
-        link_download: "https://groupdocscloud.github.io/"
+        link_download: "https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-android"
         link_learn: "https://docs.groupdocs.cloud/viewer/"
         link_buy: "https://purchase.groupdocs.cloud/buy"
 
@@ -57,7 +58,13 @@ submenu:
 overview:
     enable: true
     content: |
-      GroupDocs.Viewer Cloud for cURL allows you to seamlessly enhance your application with the capability to render a number of document formats. The API supports a variety of document formats and allows viewing a specific document in HTML, image, PDF or its original format with the flexibility to render the whole document, page by page or custom range of pages.
+      GroupDocs.Viewer Cloud is a true REST API that gives the complete freedom of platform & programming language whereas GroupDocs.Viewer Cloud SDK for Android is built as a layer on the top of GroupDocs.Viewer Cloud REST API, allowing a higher level of abstraction so that you don't need to know the REST API to use this SDK.
+
+      GroupDocs.Viewer Cloud API allows you to seamlessly enhance your application with the capability to render a number of document formats with the ability to view a specific document in HTML, image, PDF or its original format. You also get the flexibility to render the whole document, page by page or custom range of pages. GroupDocs.Viewer Cloud SDK for Android has been developed to help you integrate all these features in your Android application without any hassle.
+
+      
+
+
     tabs:
       enable: true     
       
@@ -90,11 +97,12 @@ overview:
             * Rotating & Reordering
             * Watermark Pages
             * Rendering Attachments
+            
       
       ## TAB TWO ##
       tab_two:
         description: |
-          GroupDocs.Viewer Cloud for cURL supports a number of document formats.
+          GroupDocs.Viewer Cloud supports a number of document formats.
 
         left:
           enable: true
@@ -133,7 +141,45 @@ overview:
       ## TAB THREE ##
       tab_three:
         description: |
-          GroupDocs.Viewer Cloud for cURL - some of the supported languages and platforms.
+          Easily get started with GroupDocs.Viewer REST API while using your favorite language & platform.
+
+
+
+
+        
+        left:
+          enable: true
+          table:
+            # table loop
+            - icon: "fab fa-windows"
+              title: "Operating Systems"
+              content: |
+                * Microsoft Windows Desktop
+                * Microsoft Windows Server
+                * Linux
+                * MacOS
+
+            # table loop
+            - icon: "fas fa-code"
+              title: "Supported Frameworks"
+              content: |
+                * Java 7 (1.7) and above
+
+        right:
+          enable: true
+          table:
+            # table loop
+            - icon: "fas fa-cogs"
+              title: "Development Environments"
+              content: |
+                * NetBeans
+                * IntelliJ IDEA
+                * Eclipse
+            # table loop
+            - icon: "fas fa-tools"
+              title: "Build Automation Tool"
+              content: |
+                * Maven
 
 ############################# Features ############################
 features:
@@ -171,36 +217,67 @@ features:
 
     more_feature:
       # more_feature_loop
-      - title: "Quick and Reliable Request and Response"
+      - title: "An Easy SDK for Developers Who Want to Save Time"
         content: |
-          The cloud based viewer API provides you all the supported file formats along with file extensions in a well formatted JSON response with just a few lines of code.
-          Get Supported File Formats - cURL
+          Using the GroupDocs Cloud APIs is quite simple as there is nothing to install. Simply create an account at GroupDocs Cloud and get your application information. Once you have the App SID & key, you are ready to give the GroupDocs Cloud REST APIs a try. The SDKs have been developed to facilitate the developers and to let them get started with our APIs real fast by hiding the REST API calls and allowing you to use the features of the API in a native way using Android as the language.
+        # more_feature_loop
+      - title: "Render a Number of Document Formats"
+        content: |
+          The cloud-based viewer API has the ability to display different document formats quickly, with just a few lines of code. Using the SDK for Android you can find out about the various document formats supported by the SDK. 
+      # more_feature_loop
+      - title: "Get a list of supported file formats - Android"
+        content: |
           
-          ```shell
-          curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/formats" \
-          -H "accept: application/json" \
-          -H "authorization: Bearer xxxxxxxxxx"
+          
+          ```rb
+            import com.groupdocs.cloud.viewer.client.*;
+            import com.groupdocs.cloud.viewer.model.*;
+            import com.groupdocs.cloud.viewer.api.InfoApi;
+
+            public class ApiExample {
+                
+            public static void getSupportedFormats() {
+
+            //TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
+            String appSid = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+            String appKey = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+
+            Configuration configuration = new Configuration(appSid, appKey);
+
+            InfoApi infoApi = new InfoApi(configuration);
+
+            try {
+                FormatsResult response = infoApi.getSupportedFileFormats();
+                for (Format format : response.getFormats()) {
+                    System.out.println(format.getFileFormat());
+                }
+                
+                } catch (ApiException e) {
+                    System.err.println("Failed to get supported file formats");
+                    e.printStackTrace();
+                    
+                }
+
+              }
+          }
           ```
       # more_feature_loop
-      - title: "Get Started with Document Viewing REST API"
-        content: "It is easy to get started with GroupDocs.Viewer Cloud as there is nothing to install. Simply create an account at GroupDocs Cloud and get your application information. Once you have the App SID & key, you are ready to give the GroupDocs.Viewer Cloud REST API a try with any language - on any platform."
-
+      - title: "Efficiently Minify Output Content"
+        content: "One of the most exciting features of our Cloud-based viewer API is its ability to minify the output content. Minification removes comments, extra white-spaces, and other unneeded characters without breaking the content structure. As a result, the page becomes smaller in size and loads faster. "
+      
       # more_feature_loop
       - title: "Flexible Rendering of Documents"
-        content: "GroupDocs.Viewer Cloud is a powerful document viewer REST API that allows you to display over 85 document formats in your applications. It allows document rendering for the whole document, page by page or custom range of pages."
+        content: "GroupDocs.Viewer is a powerful document viewer REST API that allows you to display over 85 document formats in your applications. It allows document rendering for the whole document, page by page or custom range of pages."
+
+      # more_feature_loop
+      - title: "Customize to Suit your Needs"
+        content: "GroupDocs.Viewer Cloud SDK for Android is 100% tested and out of the box running. The SDK is open source and has an MIT license. The API is easy to customize and changes can be made according to the features you need to add in your application."
+
+      
+
+      
        
-       # more_feature_loop
-      - title: "Language, Platform & Storage Independence"
-        content: "GroupDocs.Viewer Cloud can not only be used with any language or platform which supports HTTP requests and responses, but it can also be used with many third party cloud storage providers including Amazon S3, Google Cloud, Google Drive and DropBox."
-
-        # more_feature_loop
-      - title: "Security and Authentication"
-        content: "The GroupDocs.Viewer Cloud API is secured and requires authentication. Users need to register at GroupDocs Cloud and get their app access key ID and app secret access key. Authenticated requests require a signature and AppSID query parameters or OAuth 2.0 authorization header."
-
-
-        # more_feature_loop
-      - title: "API Explorer"
-        content: "The easiest way to try out GroupDocs.Viewer Cloud API right away in your browser is by using GroupDocs for Cloud Web API explorer, which is a collection of Swagger documentation for the GroupDocs Cloud APIs. It also provides testing and interactivity to our API endpoint documentation."
+       
 
 ############################# Support ############################
 support:
@@ -248,11 +325,11 @@ solutions:
           link: "/viewer/python/"
 
         # solution loop
-        - img_alt: "GroupDocs.Viewer Cloud SDK for Ruby"
-          image: "/sdk/272x272/groupdocs_viewer-for-ruby.webp"
+        - img_alt: "GroupDocs.Viewer Cloud SDK for Android"
+          image: "/sdk/272x272/groupdocs_viewer-for-android.webp"
           product: "GroupDocs.Viewer"
-          platform: "Ruby"
-          link: "/viewer/ruby/"
+          platform: "Android"
+          link: "/viewer/android/"
 
         # solution loop
         - img_alt: "GroupDocs.Viewer Cloud SDK for Node.js"
@@ -272,4 +349,4 @@ solutions:
 ############################# Back to top ###############################
 back_to_top:
   enable: true
----
+--- 
