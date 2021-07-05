@@ -6,7 +6,7 @@ draft: false
 
 ############################# Head ############################
 head_title: "Document Viewer REST API & Cloud SDKs | GroupDocs"
-head_description: "Create document viewer & render images and documents using Cloud SDKs for .NET, Java, PHP, Python, Ruby, Node.js or cURL to communicate with REST APIs."
+head_description: "Create Document Viewer using Cloud SDKs for .NET, Java, PHP, Python, Ruby, Node.js or cURL."
 
 ############################# Header ############################
 title: "Document Viewer Cloud API & SDKs"
