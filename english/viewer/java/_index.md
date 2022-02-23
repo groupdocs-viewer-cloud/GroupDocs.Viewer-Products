@@ -15,7 +15,7 @@ head_description: "Work with Java document viewer Cloud SDK & REST APIs to creat
 
 ############################# Header ############################
 title: "Document Viewing REST API & Java Cloud SDK"
-description: "Build robust document rendering & viewing tools using Java REST API. Boost your development without worrying about underlying details.‎"
+description: "Build robust document rendering & viewing tools using Java REST API. Boost your development without worrying about underlying details."
 button:
     enable: true
 

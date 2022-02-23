@@ -15,7 +15,7 @@ head_description: "REST APIs for Documents viewing and rendering via cURL comman
 
 ############################# Header ############################
 title: "Simply use cURL to Render & View Documents"
-description: "Exposes RESTful APIs to view and render business documents & attachments for supported file formats. Render as PDF, HTML, PNG or JPG image‎"
+description: "Exposes RESTful APIs to view and render business documents & attachments for supported file formats. Render as PDF, HTML, PNG or JPG image"
 button:
     enable: true
 

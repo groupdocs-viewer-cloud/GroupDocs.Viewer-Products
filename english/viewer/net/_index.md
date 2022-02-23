@@ -15,7 +15,7 @@ head_description: ".NET document viewer Cloud SDK & REST APIs. Render 80+ file f
 
 ############################# Header ############################
 title: "C# .NET SDK to Render & View Documents"
-description: "REST API to build seamless document viewer .NET applications. Accurately render a wide range of file formats as images, HTML or PDF.‎"
+description: "REST API to build seamless document viewer .NET applications. Accurately render a wide range of file formats as images, HTML or PDF."
 button:
     enable: true
 

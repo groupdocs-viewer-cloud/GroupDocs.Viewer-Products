@@ -10,7 +10,7 @@ head_description: "Powerful, flexible and cross-platform document viewer SDKs, C
 
 ############################# Header ############################
 title: "Document Rendering and Viewing Solution"
-description: "‎Flexible document viewing solution for programmers and professionals to render and display widely used file formats anywhere.‎"
+description: "Flexible document viewing solution for programmers and professionals to render and display widely used file formats anywhere."
 
 ############################# APIs ###############################
 apis:
